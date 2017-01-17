@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/Color_Title"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/iv_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/fanhui"
+            android:layout_margin="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点详情"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWrite"
+            android:textSize="25dp"
+            />
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/share"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_share"
+            android:background="@mipmap/star"
+            android:layout_margin="15dp"
+            android:id="@+id/imageView"/>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/yue_ji_item_view_pager"
+                android:layout_width="match_parent"
+                android:layerType="software"
+                android:layout_height="200dp">
+
+            </com.jude.rollviewpager.RollPagerView>
+            <TextView
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yue_ji_details_name"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@id/commend_item_view_pager"
+                android:layout_centerHorizontal="true"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yue_ji_details_price"
+
+                    android:textColor="@color/colorOrange"
+                    android:textSize="19dp"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price_after"
+                    android:textSize="10dp"
+
+                    android:layout_alignBottom="@+id/commend_item_price"
+                    android:layout_toEndOf="@+id/commend_item_price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commend_item_keep"
+
+                    android:drawableLeft="@mipmap/shoucangxing"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignTop="@+id/price_after"
+                    android:layout_toStartOf="@+id/commend_item_share"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commend_item_share"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/fenxiang"
+                    android:layout_alignTop="@+id/commend_item_keep"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDarkGrey"
+                android:layout_below="@+id/commend_item_share"
+                android:layout_alignParentStart="true"
+                android:id="@+id/view2"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="景点地址："
+                    android:id="@+id/textView2"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yue_ji_details_address"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView2"/>
+                <LinearLayout
+                    android:id="@+id/ll_baidumap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/diturukou"
+                        android:layout_margin="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/commend_item_satnav"
+                        android:text="点击导航"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorDarkGrey"
+                android:layout_below="@+id/commend_item_address"
+                android:layout_alignEnd="@+id/commend_item_share"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/view"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="友情提示："
+                    android:textColor="@color/green"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/textView"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yue_ji_details_tips"
+                    android:layout_alignTop="@id/textView"
+                    android:layout_toRightOf="@id/textView"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorLightGrey"/>
+            <RelativeLayout
+                android:id="@+id/yue_ji_details_tese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_tese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/chanpingtese"
+                    android:text="产品特色"
+                    android:textColor="@color/colorBlack"
+
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/zhankai" />
+            </RelativeLayout>
+            <WebView
+                android:id="@+id/yue_ji_details_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/commend_item_share"
+                android:layout_below="@+id/textView3">
+
+            </WebView>
+
+            <RelativeLayout
+                android:id="@+id/yue_ji_details_jiaotong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_constraint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/jiaotong"
+                    android:text="交通信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/zhankai" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/yue_ji_item_transportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_margin="10dp"
+                android:text="Transportation "
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

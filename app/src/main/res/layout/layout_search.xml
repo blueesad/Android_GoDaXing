@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/search_img"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/search_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_img"
+        android:layout_toEndOf="@+id/search_img"
+        android:text="search_name1111111111111"/>
+
+    <TextView
+        android:id="@+id/search_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_name"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/search_img"
+        android:text="address"/>
+
+    <TextView
+        android:id="@+id/search_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_address"
+        android:layout_toEndOf="@+id/search_img"
+        android:text="price"
+        android:textColor="@color/colorOrange"/>
+
+    <TextView
+        android:id="@+id/search_price_after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_price"
+        android:layout_marginLeft="4dp"
+        android:layout_toEndOf="@+id/search_price"
+        android:text="price_after"
+        android:textSize="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/search_name"
+        android:src="@mipmap/cu"/>
+
+    <TextView
+        android:id="@+id/search_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_price_after"
+        android:layout_alignEnd="@+id/imageView"
+        android:drawableLeft="@mipmap/diturukou"
+        android:text="distance"/>
+
+</RelativeLayout>

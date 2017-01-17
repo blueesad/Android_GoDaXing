@@ -1,0 +1,54 @@
+一、首页uri：
+http://dxlv.iyoudaxing.com/Api/?lng=4.9E-324&lat=4.9E-324（用类sight和play隔开）
+首页轮播详情：
+http://dxlv.iyoudaxing.com/Api/Sight/getContent/id/?id=33 
+
+
+景点推荐的item：
+http://dxlv.iyoudaxing.com/Api/Sight/getContent/id/?id=40
+
+http://dxlv.iyoudaxing.com/Api/Sight/getContent/id/?id=76
+
+一起玩咯的item：id从99开始
+http://dxlv.iyoudaxing.com/Api/Play/getContent/id/?id=99
+
+景点：
+http://dxlv.iyoudaxing.com/Api/Sight/?lng=4.9E-324&lat=4.9E-324
+景点详情：
+http://dxlv.iyoudaxing.com/Api/Sight/getContent/id/?id=57 
+
+
+二、促销uri:
+http://dxlv.iyoudaxing.com/Api/Promotion/getList/page/?page=1&lng=4.9E-324&lat=4.9E-324
+三、附近uri:
+1.推荐景点
+http://dxlv.iyoudaxing.com/Api/Sight/near/page/?page=1&lng=4.9E-324&lat=4.9E-324
+
+2.一起玩咯：
+http://dxlv.iyoudaxing.com/Api/Play/near/page/?page=1&lng=4.9E-324&lat=4.9E-324
+
+
+
+
+http://dxlv.iyoudaxing.com/Api/User/getSmsCode?mobile=18390979975
+
+http://dxlv.iyoudaxing.com/Api/User/getUserInfo?token=9f152b4d3682144afba14331a2cc562a 
+
+http://dxlv.iyoudaxing.com/Api/User/singupMobile    post
+password=123456&par_key=5b34786a491301d7deb9586772345f68&code=903791&mobile=13249806267 
+
+
+POST http://dxlv.iyoudaxing.com/Api/User/singupMobile HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/1.6.0 (Linux; U; Android 4.4.2; Nexus 6 Build/KOT49H)
+Host: dxlv.iyoudaxing.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 87
+
+password=123456&par_key=21d7cf45a4628d7bafce5e727b469877&code=668542&mobile=18390979975
+
+
+
+
+

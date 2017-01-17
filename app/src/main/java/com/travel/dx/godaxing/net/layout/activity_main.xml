@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="72dp"></RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="72dp">
+        <com.travel.dx.godaxing.widget.BottomMenu
+            android:id="@+id/home_bm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_text = "首页"
+            app:menu_icon_normal="@mipmap/home_normal"
+            app:menu_icon_selected="@mipmap/home_selected"
+            />
+        <com.travel.dx.godaxing.widget.BottomMenu
+            android:id="@+id/shop_bm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_text = "促销"
+            app:menu_icon_normal="@mipmap/shop_normal"
+            app:menu_icon_selected="@mipmap/shop_selected"
+            />
+        <com.travel.dx.godaxing.widget.BottomMenu
+            android:id="@+id/near_bm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_text = "附近"
+            app:menu_icon_normal="@mipmap/near_normal"
+            app:menu_icon_selected="@mipmap/near_selected"
+            />
+        <com.travel.dx.godaxing.widget.BottomMenu
+            android:id="@+id/me_bm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:menu_text = "我的"
+            app:menu_icon_normal="@mipmap/me_normal"
+            app:menu_icon_selected="@mipmap/me_selected"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

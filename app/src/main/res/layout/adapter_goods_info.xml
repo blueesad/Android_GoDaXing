@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWrite"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="标题"
+        android:layout_marginBottom="5dp"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_price"
+            android:text="￥ 90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ColorYellow"
+            android:textSize="19dp"
+            />
+        <TextView
+            android:id="@+id/tv_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="￥ 40"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_price"
+            android:layout_alignBaseline="@id/tv_price"
+            android:textColor="@color/colorDarkGrey"
+            />
+        <TextView
+            android:id="@+id/tv_sold"
+            android:layout_toRightOf="@id/tv_oldprice"
+            android:layout_alignBottom="@id/tv_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  已售：0件"
+            />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_pay"
+            android:background="@color/ColorYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即抢购"
+            android:padding="4dp"
+            android:textColor="@color/colorWrite"
+            />
+    </RelativeLayout>
+</LinearLayout>

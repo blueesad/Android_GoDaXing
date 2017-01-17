@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/green">
+        <ImageView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:src="@mipmap/fanhui"
+            android:id="@+id/back_search"/>
+    <EditText
+        android:id="@+id/search_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sousuo"
+        android:hint="请输入景点名称目的地"
+        android:textColorHint="@color/colorWrite"
+        android:textColor="@color/colorWrite"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/back_search"
+        android:layout_marginStart="7dp"/>
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/colorWrite"
+            android:text="搜索"
+            android:layout_marginEnd="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/search_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="热门搜索"
+            android:textSize="19dp"
+            android:textColor="@color/green"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/search_recycleview">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="没有更多热门搜索"
+            android:gravity="center"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>

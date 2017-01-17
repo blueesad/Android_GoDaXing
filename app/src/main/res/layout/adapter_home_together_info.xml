@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="215dp"
+    android:layout_below="@+id/relativeLayout"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="170dp"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:id="@+id/home_together_iv"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+        <TextView
+            android:id="@+id/home_together_name"
+            android:text="name"
+            android:paddingLeft="3dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="#FFFFFF"
+            android:background="#5000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_together_price"
+        android:text="price"
+        android:textColor="#FF8000"
+        android:textSize="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignStart="@+id/relativeLayout2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_together_price_after"
+        android:text="togetherprice_after"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/home_together_price" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_together_distance"
+        android:text="距离"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@mipmap/diturukou"
+        android:layout_alignBaseline="@+id/home_together_price"
+        android:layout_alignBottom="@+id/home_together_price"
+        android:layout_alignEnd="@+id/relativeLayout2" />
+</RelativeLayout>

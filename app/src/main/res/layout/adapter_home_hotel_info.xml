@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorLightGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorWrite"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/home_hotel_iv"
+            android:layout_marginBottom="10dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/home_hotel_name"
+            android:text="name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/home_hotel_iv" />
+      <RelativeLayout
+          android:background="@drawable/phone_shape"
+          android:layout_marginRight="10dp"
+          android:layout_width="150dp"
+          android:layout_height="20dp"
+          android:layout_alignBottom="@+id/home_hotel_iv"
+          android:layout_alignParentEnd="true">
+
+          <ImageView
+              android:background="@mipmap/dianhuatubiao"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/imageView2"
+
+              android:layout_centerVertical="true"
+              android:layout_marginStart="25dp"
+              />
+
+          <TextView
+              android:text="电话号码"
+              android:textColor="@color/colorWrite"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/hotel_phone_tv"
+              android:layout_marginLeft="6dp"
+              android:layout_centerInParent="true"
+              android:layout_toRightOf="@+id/imageView2"
+              />
+
+      </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

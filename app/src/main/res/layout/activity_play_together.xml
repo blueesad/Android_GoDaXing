@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/Color_Title"
+        >
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/sousuo"
+            android:text="请输入景点名称目的地"
+            android:textColor="@color/colorWrite"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/play_together_radiogroup"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="48dp">
+        <RadioButton
+            android:id="@+id/play_doing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/near_selector"
+            android:checked="true"
+            android:textColor="@drawable/text_color"
+            android:text="正在进行"
+            android:textSize="17sp"
+            android:button="@null"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/play_wangqi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/near_selector"
+            android:textColor="@drawable/text_color"
+            android:text="往期活动"
+            android:textSize="17sp"
+            android:button="@null"
+            android:gravity="center"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_below="@+id/relativeLayout"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="170dp"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:id="@+id/scence_iv"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+        <TextView
+            android:id="@+id/scence_name"
+            android:text="name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#FFFFFF"
+            android:background="#5000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <TextView
+
+        android:text="goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scence_goods"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scence_price"
+        android:text="price"
+        android:textColor="#FF8000"
+        android:textSize="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/relativeLayout2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scence_price_after"
+        android:text="scenceprice_after"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="10dp"
+        android:layout_marginLeft="15dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/scence_price" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scence_distance"
+        android:text="距离"
+        android:drawableLeft="@mipmap/diturukou"
+        android:layout_alignTop="@+id/scence_price"
+        android:layout_alignEnd="@+id/relativeLayout2" />
+</RelativeLayout>

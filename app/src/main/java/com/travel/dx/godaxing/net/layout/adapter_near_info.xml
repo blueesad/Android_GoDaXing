@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/near_iv"
+        android:layout_width="140dp"
+        android:layout_height="120dp"/>
+    <TextView
+        android:id="@+id/near_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="naer_title"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/near_iv"
+        android:layout_toEndOf="@+id/near_iv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/near_price"
+        android:textColor="#FF8000"
+        android:text="price"
+        android:textSize="17dp"
+        android:layout_alignBottom="@+id/near_iv"
+        android:layout_toEndOf="@+id/near_iv"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/near_price_after"
+        android:textColor="#999"
+        android:text="price_after"
+        android:layout_marginLeft="15dp"
+        android:layout_alignBottom="@+id/near_iv"
+        android:layout_toEndOf="@+id/near_price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/distance"
+        android:drawableLeft="@mipmap/diturukou"
+        android:text="  distance"
+        android:layout_alignBottom="@+id/near_iv"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

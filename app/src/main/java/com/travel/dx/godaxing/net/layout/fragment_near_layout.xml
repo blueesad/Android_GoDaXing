@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/Color_Title"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/sousuo"
+            android:text="请输入景点名称目的地"
+            android:textColor="@color/colorWrite"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/near_radiogroup"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="48dp">
+        <RadioButton
+            android:id="@+id/near_tuijian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/near_selector"
+            android:checked="true"
+            android:textColor="@drawable/text_color"
+            android:text="推荐景点"
+            android:textSize="17sp"
+            android:button="@null"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/near_together"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/near_selector"
+            android:textColor="@drawable/text_color"
+            android:text="一起玩咯"
+            android:textSize="17sp"
+            android:button="@null"
+            android:gravity="center"/>
+    </RadioGroup>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/near_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
